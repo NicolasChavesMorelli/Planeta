@@ -1,29 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Planet Earth</title>
     <style>
-        /* Define the container for the Earth */
-        .earth-container {
-            width: 200px; /* Set the size of the Earth */
-            height: 200px;
-            border-radius: 50%; /* Create a circular shape */
-            background-image: url('https://i.imgur.com/6pSgyN4.jpg'); /* Set the Earth image */
-            background-size: cover; /* Make the image cover the container */
-            animation: rotate 10s linear infinite; /* Define the rotation animation */
+        /* Estilize o corpo do documento */
+        body {
+            background-color: black;
+            background-image: url(https://cdn.discordapp.com/attachments/1099449480769699920/1099520626705829948/fundo-de-galaxia-espacial_1.png);
+            opacity: ;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
         }
 
-        /* Define the rotation animation */
+        /* Crie o continente da Terra */
+        .earth {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        background-color: black;
+        background-image: url(https://www.guiageografico.com/mapas/mapa/imagem-mundo.jpg);
+        background-size: cover;
+        box-shadow: -10px -10px 10px black inset, 3px 3px 10px white inset, 0px 0px 20px #3a86ff;
+        animation: rotate 35s linear infinite;
+        }
+
+        /* Animação de rotação */
         @keyframes rotate {
-            0% {
-                transform: rotateY(0deg); /* Start rotation from 0 degrees */
-            }
-            100% {
-                transform: rotateY(360deg); /* End rotation at 360 degrees */
-            }
+        to {background-position: 100%;}
         }
     </style>
 </head>
 <body>
-    <div class="earth-container"></div> <!-- Create the Earth container element -->
+    <!-- Crie o continente da Terra -->
+    <div class="earth"></div>
 </body>
 </html>
