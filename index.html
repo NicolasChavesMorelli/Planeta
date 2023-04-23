@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Define the container for the Earth */
+        .earth-container {
+            width: 200px; /* Set the size of the Earth */
+            height: 200px;
+            border-radius: 50%; /* Create a circular shape */
+            background-image: url('https://i.imgur.com/6pSgyN4.jpg'); /* Set the Earth image */
+            background-size: cover; /* Make the image cover the container */
+            animation: rotate 10s linear infinite; /* Define the rotation animation */
+        }
+
+        /* Define the rotation animation */
+        @keyframes rotate {
+            0% {
+                transform: rotateY(0deg); /* Start rotation from 0 degrees */
+            }
+            100% {
+                transform: rotateY(360deg); /* End rotation at 360 degrees */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="earth-container"></div> <!-- Create the Earth container element -->
+</body>
+</html>
